@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Scanner</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="qr-container">
+      <h1 class="title">QR Code Scanner</h1>
+      <h3 class="title-des">Scan your QR Code</h3>
+      <h4 class="qr-detail">QR-Result :</h4>
+      <h4 class="qr-detail" id="qr-detail"></h4>
+      <video id="video" playsinline></video>
+      <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+      <button id="captureButton">Capture</button>
+      <canvas id="canvas" style="display: none"></canvas>
+    </div>
+  </body>
+</html>
