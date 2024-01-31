@@ -1,54 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(24, 23, 23);
   color: white;
+  font-family: "Montserrat";
+  overflow-y: hidden;
+}
+
+#background img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+#page1 {
+  background-color: rgba(6, 0, 13, 0.902);
+  height: 100vh;
+  width: 100%;
+}
+
+.qr-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  top: 5%;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
-  margin: 40px;
 }
 
 .title-des {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .qr-detail {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 50px;
 }
 
-.qr-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 #video {
-  width: 100%;
-  max-width: 600px;
-  margin: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 3px solid blueviolet;
 }
 
 #captureButton {
-  margin: 20px;
-  padding: 15px;
-  font-size: 2.5rem;
-  background-color: blueviolet;
+  width: 130px;
+  margin: 30px;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: rgb(76, 12, 135);
   border-radius: 25px;
   border: none;
   transition: 0.5s;
-  font-weight: bold;
-  font-family: sans-serif;
   color: white;
 }
 
 #captureButton:hover {
   cursor: pointer;
-  background-color: rgb(111, 0, 255);
+  background-color: blueviolet;
 }
